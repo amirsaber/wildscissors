@@ -1,0 +1,17 @@
+<h1>
+  {{title}}
+</h1>
+
+<form>
+  <div>
+    <label>Username</label><br>
+    <input type="text" #username>
+  </div>
+  <div>
+    <label>Password</label><br>
+    <input type="password" #password>
+  </div>
+</form>
+<br>
+<button (click)='check_login(username, password)'>login</button>
+<br> {{message}}
